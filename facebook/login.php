@@ -6,63 +6,63 @@
 <title>Facebook</title>
 <link rel="icon" type="image/x-icon" href="https://static.xx.fbcdn.net/rsrc.php/yb/r/hLRJ1GG_y0J.ico">
 <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f2f5;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
+	body {
+		font-family: 'Arial', sans-serif;
+		background-color: #f0f2f5;
+		margin: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+	}
 
-        .login-container {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            width: 400px;
-            text-align: center;
-        }
+	.login-container {
+		background-color: #fff;
+		border-radius: 8px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		padding: 20px;
+		width: 400px;
+		text-align: center;
+	}
 
-        .login-container h2 {
-            color: #1877f2;
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
+	.login-container h2 {
+		color: #1877f2;
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
 
-        .login-form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
+	.login-form {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+	}
 
-        .login-form input {
-            padding: 10px;
-            border: 1px solid #dddfe2;
-            border-radius: 4px;
-            font-size: 14px;
-        }
+	.login-form input {
+		padding: 10px;
+		border: 1px solid #dddfe2;
+		border-radius: 4px;
+		font-size: 14px;
+	}
 
-        .login-form button {
-            padding: 12px;
-            background-color: #1877f2;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-        }
+	.login-form button {
+		padding: 12px;
+		background-color: #1877f2;
+		color: #fff;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		font-size: 16px;
+	}
 
-        .login-form button:hover {
-            background-color: #166fe5;
-        }
+	.login-form button:hover {
+		background-color: #166fe5;
+	}
 
-        .create-account-btn {
-            margin-top: 10px;
-            color: #1877f2;
-            cursor: pointer;
-        }
+	.create-account-btn {
+		margin-top: 10px;
+		color: #1877f2;
+		cursor: pointer;
+	}
 </style>
 </head>
 <body>
