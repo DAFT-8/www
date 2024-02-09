@@ -6,49 +6,49 @@
 <title>Instagram</title>
 <link rel="icon" type="image/x-icon" href="https://www.instagram.com/static/images/ico/favicon.ico/36b3ee2d91ed.ico">
 <style>
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #fafafa;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
+	body {
+	font-family: 'Arial', sans-serif;
+	background-color: #fafafa;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	}
 
-  .login-container {
-    background-color: #fff;
-    border: 1px solid #dbdbdb;
-    border-radius: 4px;
-    padding: 20px;
-    width: 300px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
+	.login-container {
+	background-color: #fff;
+	border: 1px solid #dbdbdb;
+	border-radius: 4px;
+	padding: 20px;
+	width: 300px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	}
 
-  .login-container h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
-  }
+	.login-container h2 {
+	margin-bottom: 20px;
+	font-size: 24px;
+	}
 
-  .login-form input {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    border: 1px solid #dbdbdb;
-    border-radius: 4px;
-  }
+	.login-form input {
+	width: 100%;
+	padding: 10px;
+	margin: 8px 0;
+	border: 1px solid #dbdbdb;
+	border-radius: 4px;
+	}
 
-  .login-form button {
-    width: 100%;
-    padding: 10px;
-    background-color: #3897f0;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-weight: bold;
-    cursor: pointer;
-  }
+	.login-form button {
+	width: 100%;
+	padding: 10px;
+	background-color: #3897f0;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	font-weight: bold;
+	cursor: pointer;
+	}
 </style>
 </head>
 <body>
