@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Discord - Login</title>
+<title>Discord</title>
 <link rel="icon" type="image/x-icon" href="https://discord.com/assets/2c21aeda16de354ba5334551a883b481.ico">
 <style>
     body {
