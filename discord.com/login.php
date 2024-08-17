@@ -34,7 +34,7 @@
     }
 
     .login-form input {
-        width: 100%;
+        width: 85%;
         padding: 10px;
         margin: 8px 0;
         border: 1px solid #23272a;
@@ -44,7 +44,7 @@
     }
 
     .login-form button {
-        width: 100%;
+        width: 85%;
         padding: 10px;
         background-color: #7289da;
         color: #fff;
